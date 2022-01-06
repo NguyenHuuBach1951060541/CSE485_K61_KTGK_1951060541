@@ -46,7 +46,7 @@
 
         public function updateUser($mamh, $ten_mh, $sotinchi, $sotiet_lt, $sotiet_bt, $sotiet_thtn, $sogio_tuhoc){
             $conn = $this->connectDb();
-            $sql = "UPDATE monhoc SET mamh='$mamh', ten_mh='$ten_mh', sotinchi='$sotinchi', sotiet_lt='$sotiet_lt', sotiet_bt='$sotiet_bt', sotiet_thtn='$sotiet_thtn', sogio_tuhoc='$sogio_tuhoc' WHERE bd_id = '$id'";
+            $sql = "UPDATE monhoc SET mamh='$mamh', ten_mh='$ten_mh', sotinchi='$sotinchi', sotiet_lt='$sotiet_lt', sotiet_bt='$sotiet_bt', sotiet_thtn='$sotiet_thtn', sogio_tuhoc='$sogio_tuhoc' WHERE bd_id = ''";
             $result = mysqli_query($conn,$sql);
             $this->closeDb($conn);
             return $result;
